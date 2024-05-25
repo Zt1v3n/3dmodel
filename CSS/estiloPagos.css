@@ -1,0 +1,304 @@
+:root{
+    --color-yellow: rgb(255, 217, 0);
+    --color-orange: rgb(243, 166, 23);
+    --color-black: rgba(0,0,0,0.75);
+    --color-blue: rgb(32, 122, 240);
+    --color-blue-v2: rgb(32, 106, 243);
+    --color-green: rgb(20, 192, 20);
+    --color-red: rgb(238, 22, 22);
+    --color-white: rgb(243, 239, 239);
+    --color-gray: rgb(175, 173, 173);
+    --color-purple: rgb(90, 138, 226);
+}
+/*header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-blue-v2);
+    height: 115px;
+    width: 100%;
+}
+#imagen{
+    display: block;
+    height: 110px;
+    width: 110px;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    background-color: var(--color-blue-v2);
+    box-shadow: 10px 10px 5px -2px var(--color-black);
+}
+#paginas{
+    display: flex;
+    height: 50px;
+    margin-top: 1%;
+    column-count: 4;
+    column-gap: 1px;
+}
+#uno{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-yellow);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#dos{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-green);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#tres{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-blue-v2);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#cuatro{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-red);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#uno:hover,#dos:hover,#tres:hover #cuatro:hover{
+    cursor: pointer;
+    transform: scale(1.150);
+}
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+#shop{
+    padding-top: 25px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 150;
+    font-style: normal;
+    height: 25px;
+    width: 110px;
+    background-color: var(--color-white);
+    color: rgb(7, 7, 7);
+    border: 1px solid var(--color-blue-v2);
+    border-radius: 10%;
+}
+h3:hover{
+    background-color: var(--color-orange);
+    cursor: pointer;
+    transform: scale(1.150);
+}
+/*section*/
+.metodo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: var(--color-purple);
+    border: 2px solid var(--color-blue);
+    color: var(--color-white);
+    height: 15%;
+    width: 15%;
+}
+article{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 15%;
+}
+.opcion{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3%;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    background-color: var(--color-purple);
+    border: 2px solid var(--color-blue);
+}
+.opcion:hover{
+    background-color: var(--color-orange);
+    cursor: pointer;
+    transform: scale(1.100);
+}
+/*footer*/
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    position: absolute;
+    height: 115px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    bottom: 5px;
+    color: rgb(7, 7, 7);
+    background-color: var(--color-gray);
+    font-size: 100%;
+  }
+
+  /* estilos para 480px */
+@media (max-width: 480px) {
+    /*header*/
+ header{
+     display: flex;
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center; 
+     height: auto; 
+     padding: 15px; 
+ }
+ #imagen{
+     display: block;
+     height: 80px; 
+     width: 80px; 
+     margin-bottom: 15px; 
+ }
+ #logo{
+     height: 60px; 
+     width: 60px; 
+     box-shadow: 5px 5px 5px -2px var(--color-black); 
+ }
+ #paginas{
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: center; 
+     gap: 10px; 
+     margin-bottom: 20px;
+ }
+ #uno, #dos, #tres, #cuatro{
+     height: 40px; 
+     width: 40px; 
+     font-size: 20px; 
+     padding-top: 15px; 
+ }
+ #login{
+     display: flex; 
+     justify-content: center; 
+     width: 100%; 
+     gap: 1px; 
+ }
+ #shop{
+     position: relative;
+     top: 20px;
+     left: -5px;
+     height: 40px; 
+     width: auto; 
+     cursor: pointer;
+ }
+ h3{
+     margin-bottom: 0;
+     text-align: center;
+     font-size: 20px; 
+     height: auto; 
+     width: auto; 
+     padding: 5px; 
+     border-radius: 5px; 
+ }
+ /*Section*/
+.metodo {
+    text-align: center;
+    border: 2px solid var(--color-blue);
+    height: 80px;
+    width: 200px;
+    margin: 10px auto;
+  }
+  article {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 100%; 
+  }
+  .opcion {
+    margin: 5px;
+    font-size: 14px; 
+    padding: 10px; 
+  }
+  /*Footer*/
+  footer {
+    position: relative;
+  }
+ }
+ /* estilos 768px */
+@media (min-width: 581px) and (max-width: 768px) {
+    .metodo {
+        font-size: 15px;
+        width: 440px;
+        margin: 5px left;
+      }
+      article {
+       position: static;
+        display: flex;
+        height: auto;
+        width: 60%; 
+      }
+      .opcion {
+        margin: 5px;
+        font-size: 17px; 
+        padding: 10px; 
+      }
+ }
+ /* estilos para más 769px - 1024px*/
+ @media (min-width: 769px) and (max-width: 1024px) {
+    /*section*/
+    .metodo {
+        font-size: 15px;
+        width: 400px;
+        margin: 5px left;
+      }
+      article {
+       position: static;
+        display: flex;
+        height: auto;
+        width: 40%; 
+      }
+      .opcion {
+        margin: 5px;
+        font-size: 20px; 
+        padding: 10px; 
+      }
+  }
+   /*Estilos hasta 1500px*/
+   @media (max-width: 1500px) {
+    /*section*/
+    .metodo {
+        font-size: 15px;
+        width: 400px;
+        margin: 5px left;
+      }
+      article {
+       position: static;
+        display: flex;
+        height: auto;
+        width: 30%; 
+      }
+      .opcion {
+        margin: 5px;
+        font-size: 20px; 
+        padding: 10px; 
+      }
+  }
+

@@ -1,0 +1,621 @@
+:root{
+    --color-yellow: rgb(255, 217, 0);
+    --color-orange: rgb(243, 166, 23);
+    --color-black: rgba(0,0,0,0.75);
+    --color-blue: rgb(32, 122, 240);
+    --color-blue-v2: rgb(32, 106, 243);
+    --color-blue-v3: rgb(0, 102, 255);
+    --color-green: rgb(20, 192, 20);
+    --color-green-v2: rgb(55, 230, 11);
+    --color-green-v3: rgb(5, 128, 26);
+    --color-red: rgb(238, 22, 22);
+    --color-white: rgb(243, 239, 239);
+    --color-gray: rgb(175, 173, 173);
+    --color-gray-v2: rgb(150, 148, 148);
+    --color-purple: rgb(90, 138, 226);
+    --color-cian: rgb(22, 202, 226);
+}
+/*header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-red);
+    height: 115px;
+    width: 100%;
+}
+#imagen{
+    display: block;
+    height: 110px;
+    width: 110px;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    background-color: var(--color-red);
+    box-shadow: 10px 10px 5px -2px var(--color-black);
+}
+#paginas{
+    display: flex;
+    height: 50px;
+    margin-top: 1%;
+    column-count: 4;
+    column-gap: 1px;
+}
+#uno{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-yellow);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#dos{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-green);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#tres{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-blue-v2);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#cuatro{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-red);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+    cursor: pointer;
+}
+#uno:hover,#dos:hover,#tres:hover,#cuatro:hover{
+    cursor: pointer;
+    transform: scale(1.150);
+}
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+#shop{
+    padding-top: 25px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    height: 25px;
+    width: 110px;
+    background-color: var(--color-white);
+    color: rgb(7, 7, 7);
+    border: 1px solid var(--color-blue);
+    border-radius: 10%;
+    cursor: pointer;
+}
+h3:hover{
+    background-color: var(--color-orange);
+    cursor: pointer;
+    transform: scale(1.150);
+}
+/* Nav */
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-gray-v2);
+}
+#all{
+    margin-right: 70%;
+    font-size: medium;
+    color: white;
+    background-color: var(--color-blue-v2);
+    border: 2px solid var(--color-blue);
+}
+#search{
+    margin-top: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-blue);
+}
+.placeholder{
+    position: relative;
+    top: 5px;
+    right: 30px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+/*section*/
+.pantalla{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+}
+
+#productos{
+    width: 70%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 200px 200px ;
+    gap: 20px;
+}
+.cuad-1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: var(--color-cian);
+    border: 1px solid var(--color-black);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#item-precio{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-green-v3);
+    height: 15vh;
+    width: 100%;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+}
+.cuad{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+    background-color: var(--color-green-v2);
+}
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 60vh;
+    width: 30%;
+    right: 3px;
+    background-color: var(--color-blue-v2);
+}
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    width: 50%;
+    background-color: var(--color-orange);
+    color: black;
+    border-radius: 15%
+}
+/*footer*/
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    position: fixed;
+    height: 115px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    bottom: 5px;
+    color: rgb(7, 7, 7);
+    background-color: var(--color-gray);
+    font-size: 100%;
+  }
+   
+/* estilos para 480px */
+@media (max-width: 480px) {
+    /*header*/
+ header{
+     display: flex;
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center; 
+     height: auto; 
+     padding: 15px; 
+ }
+ #imagen{
+     display: block;
+     height: 80px; 
+     width: 80px; 
+     margin-bottom: 15px; 
+ }
+ #logo{
+     height: 60px; 
+     width: 60px; 
+     box-shadow: 5px 5px 5px -2px var(--color-black); 
+ }
+ #paginas{
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: center; 
+     gap: 10px; 
+     margin-bottom: 20px;
+ }
+ #uno, #dos, #tres, #cuatro{
+     height: 40px; 
+     width: 40px; 
+     font-size: 20px; 
+     padding-top: 15px; 
+ }
+ #login{
+     display: flex; 
+     justify-content: center; 
+     width: 100%; 
+     gap: 1px; 
+ }
+ #shop{
+     position: relative;
+     top: 20px;
+     left: -5px;
+     height: 40px; 
+     width: auto; 
+     cursor: pointer;
+ }
+ h3{
+     margin-bottom: 0;
+     text-align: center;
+     font-size: 20px; 
+     height: auto; 
+     width: auto; 
+     padding: 5px; 
+     border-radius: 5px; 
+ }
+/* Nav */
+nav {
+    display: flex;
+    flex-direction: row; 
+    gap: 110px;
+}
+#all {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+    font-size: medium;
+}
+#search {
+    margin-top: 7px;
+    margin-bottom: 10px; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*section*/
+.pantalla {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin: 20px;
+}
+#productos {
+    width: 100%;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
+}
+.cuad-1 {
+    text-align: center;
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#item-precio {
+    position: static;
+    height: auto; 
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+}
+.cuad {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+    width: 100%; 
+}
+.text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 110px; 
+    border-radius: 15px;
+}
+
+ /*footer*/
+ footer {
+     font-weight: 100;
+     display: flex;
+     position: relative;
+     height: auto; 
+     width: 100%;
+     align-items: center;
+     justify-content: center; 
+     flex-direction: column;
+     bottom: 0; 
+     font-size: 16px; 
+     padding: 10px; 
+ }
+ }
+ 
+   /* estilos 768px */
+ @media (min-width: 481px) and (max-width: 768px) {
+      /*header*/
+ header{
+     display: flex;
+     flex-direction: row; 
+     justify-content: center; 
+     height: auto; 
+     padding: 15px; 
+ }
+ #imagen{
+     display: block;
+     height: 80px; 
+     width: 80px; 
+     margin-bottom: 15px; 
+ }
+ #logo{
+     height: 80px; 
+     width: 80px; 
+ }
+ #paginas{
+     display: flex; 
+     position: absolute;
+     justify-items: center;
+     gap: 10px; 
+ }
+ #uno, #dos, #tres, #cuatro{
+     height: 40px; 
+     width: 40px; 
+     font-size: 20px; 
+     padding-top: 15px; 
+ }
+ #login{
+     display: flex; 
+     justify-content: right; 
+     width: 100%; 
+     gap: 1px; 
+ }
+ #shop{
+     position: relative;
+     top: 20px;
+     left: -5px;
+     height: 40px; 
+     width: auto; 
+     cursor: pointer;
+ }
+ h3{
+     margin-bottom: 0;
+     text-align: center;
+     font-size: 20px; 
+     height: auto; 
+     width: auto; 
+     padding: 5px; 
+     border-radius: 5px; 
+ }
+ /* Nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 380px; 
+  }
+  #all {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: medium;
+  }
+  #search {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /*section*/
+  .pantalla {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+  }
+  #productos {
+    width: 100%;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto;
+  }
+  .cuad-1 {
+    text-align: center;
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+  }
+  #item-precio {
+    position: static;
+    height: auto;
+    width: 100%;
+    font-size: 12px; 
+    text-align: center;
+  }
+  .cuad {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 160px; 
+    border-radius: 15px;
+  }
+/*footer*/
+footer {
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    height: auto; 
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    bottom: 0; 
+    font-size: 16px; 
+    padding: 10px; 
+}  
+   }
+   
+ /* estilos para más 769px - 1024px*/
+   @media (min-width: 769px) and (max-width: 1024px) {
+     /*header*/
+header{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    height: auto; 
+    padding: 15px; 
+ }
+ #imagen{
+    display: block;
+    height: 80px; 
+    width: 80px; 
+    margin-bottom: 15px; 
+ }
+ #logo{
+    height: 80px; 
+    width: 80px; 
+ }
+ #paginas{
+    display: flex; 
+    position: absolute;
+    justify-items: center;
+    gap: 10px; 
+ }
+ #uno, #dos, #tres, #cuatro{
+    height: 40px; 
+    width: 40px; 
+    font-size: 20px; 
+    padding-top: 15px; 
+ }
+ #login{
+    display: flex; 
+    justify-content: right; 
+    width: 100%; 
+    gap: 1px; 
+ }
+ #shop{
+    position: relative;
+    top: 20px;
+    left: -5px;
+    height: 40px; 
+    width: auto; 
+    cursor: pointer;
+ }
+ h3{
+    margin-bottom: 0;
+    font-size: 20px; 
+    height: auto; 
+    width: auto; 
+    padding: 5px; 
+    border-radius: 5px; 
+ }
+/* Nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 590px; 
+  }
+  
+  #all {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: medium;
+  }
+  
+  #search {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /* Section */
+  .pantalla {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+  }
+  #productos {
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+  }
+  #item-precio {
+    position: static;
+    height: auto;
+    width: 100%;
+    font-size: 14px; 
+    text-align: center;
+  }
+  .cuad {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 160px; 
+    border-radius: 15px;
+    width: 30%;
+  }
+/*footer*/
+footer {
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    height: auto; 
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    bottom: 0; 
+    font-size: 16px; 
+    padding: 10px; 
+} 
+}

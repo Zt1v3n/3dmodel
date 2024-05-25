@@ -1,0 +1,519 @@
+:root{
+    --color-yellow: rgb(255, 217, 0);
+    --color-orange: rgb(243, 166, 23);
+    --color-black: rgba(0,0,0,0.75);
+    --color-blue: rgb(32, 122, 240);
+    --color-blue-v2: rgb(32, 106, 243);
+    --color-blue-v3: rgb(0, 102, 255);
+    --color-green: rgb(20, 192, 20);
+    --color-green-v2: rgb(55, 230, 11);
+    --color-green-v3: rgb(5, 128, 26);
+    --color-red: rgb(238, 22, 22);
+    --color-white: rgb(243, 239, 239);
+    --color-gray: rgb(175, 173, 173);
+    --color-purple: rgb(90, 138, 226);
+}
+/*header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-green);
+    height: 115px;
+    width: 100%;
+}
+#imagen{
+    display: block;
+    height: 110px;
+    width: 110px;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    background-color: var(--color-green);
+    box-shadow: 10px 10px 5px -2px var(--color-black);
+}
+#paginas{
+    display: flex;
+    height: 50px;
+    margin-top: 1%;
+    column-count: 4;
+    column-gap: 1px;
+}
+#uno{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-yellow);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#dos{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-green);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#tres{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-blue-v2);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#cuatro{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: var(--color-red);
+    padding-top: 25px;
+    text-align: center;
+    border: 3px solid var(--color-blue);
+    box-shadow: 10px 10px 5px -1px var(--color-black);
+}
+#uno:hover,#dos:hover,#tres:hover,#cuatro:hover{
+    cursor: pointer;
+    transform: scale(1.150);
+}
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+#shop{
+    padding-top: 25px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    height: 25px;
+    width: 110px;
+    background-color: var(--color-white);
+    color: rgb(7, 7, 7);
+    border: 1px solid var(--color-blue);
+    border-radius: 10%;
+    cursor: pointer;
+}
+h4:hover{
+    background-color: var(--color-orange);
+    cursor: pointer;
+    transform: scale(1.150);
+}
+/*section*/
+section{
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+}
+#carrusel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-green-v2);
+    width: 60%;
+    height: 70vh;
+}
+#item-precio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-green-v3);
+    height: 15vh;
+    width: 100%;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 30px;
+}
+#grupo-botones{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.anadir-carrito-bt{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    border-radius: 40px;
+    border-color: var(--color-blue-v3);
+    border-width: 5px;
+    background-color: var(--color-orange);
+    font-size: 35px;
+    font-weight:bold ;
+}
+.anadir-carrito-bt:hover{
+    cursor: pointer;
+    transform: scale(1.050);
+}
+.boton{
+    height: 120px;
+    width: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#text-imagen{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    font-size: 30px;
+}
+#opciones{
+    width: 40%;
+}
+#formatos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 60px;
+    color: var(--color-white);
+    background-color: var(--color-blue-v3);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botones-opciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+}
+.opcion{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*footer*/
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    height: 115px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    bottom: 5px;
+    color: rgb(7, 7, 7);
+    background-color: var(--color-gray);
+    font-size: 100%;
+  }
+  /* estilos para 480px */
+@media (max-width: 480px) {
+    /*header*/
+ header{
+     display: flex;
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center; 
+     height: auto; 
+     padding: 15px; 
+ }
+ #imagen{
+     display: block;
+     height: 80px; 
+     width: 80px; 
+     margin-bottom: 15px; 
+ }
+ #logo{
+     height: 60px; 
+     width: 60px; 
+     box-shadow: 5px 5px 5px -2px var(--color-black); 
+ }
+ #paginas{
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: center; 
+     gap: 10px; 
+     margin-bottom: 20px;
+ }
+ #uno, #dos, #tres, #cuatro{
+     height: 40px; 
+     width: 40px; 
+     font-size: 20px; 
+     padding-top: 15px; 
+ }
+ #login{
+     display: flex; 
+     justify-content: center; 
+     width: 100%; 
+     gap: 1px; 
+ }
+ #shop{
+     position: relative;
+     top: 20px;
+     left: -5px;
+     height: 40px; 
+     width: auto; 
+ }
+ h4{
+     margin-bottom: 0;
+     text-align: center;
+     font-size: 20px; 
+     height: auto; 
+     width: auto; 
+     padding: 5px; 
+     border-radius: 5px; 
+ }
+ /*section*/
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #carrusel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  #item-precio {
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
+    width: 100%;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+  }
+  
+  .anadir-carrito-bt {
+    width: 100%;
+    height: 80px; 
+    margin-top: 20px; 
+    border-radius: 40px;
+    border-width: 5px;
+    font-size: 25px; 
+  }
+  
+  .boton {
+    height: 80px; 
+    width: 60px; 
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  #text-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  
+  #opciones {
+    width: 100%; 
+  }
+  
+  #formatos {
+    width: 100%;
+    height: 50px; 
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #botones-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .opcion {
+    text-align: center;
+    width: 100%; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /*footer*/
+ footer {
+     font-weight: bold;
+     display: flex;
+     position: relative;
+     height: auto; 
+     width: 100%;
+     align-items: center;
+     justify-content: center; 
+     flex-direction: column;
+     bottom: 0; 
+     font-size: 16px; 
+     padding: 10px; 
+ }
+ }
+  /* estilos 768px */
+@media (min-width: 581px) and (max-width: 768px) {
+    /*header*/
+header{
+   display: flex;
+   flex-direction: row; 
+   justify-content: center; 
+   height: auto; 
+   padding: 15px; 
+}
+#imagen{
+   display: block;
+   height: 80px; 
+   width: 80px; 
+   margin-bottom: 15px; 
+}
+#logo{
+   height: 80px; 
+   width: 80px; 
+}
+#paginas{
+   display: flex; 
+   position: absolute;
+   justify-items: center;
+   gap: 10px; 
+}
+#uno, #dos, #tres, #cuatro{
+   height: 40px; 
+   width: 40px; 
+   font-size: 20px; 
+   padding-top: 15px; 
+}
+#login{
+   display: flex; 
+   justify-content: right; 
+   width: 100%; 
+   gap: 1px; 
+}
+#shop{
+   position: relative;
+   top: 20px;
+   left: -5px;
+   height: 40px; 
+   width: auto; 
+   cursor: pointer;
+}
+h4{
+   margin-bottom: 0;
+   font-size: 20px; 
+   height: auto; 
+   width: auto; 
+   padding: 5px; 
+   border-radius: 5px; 
+}
+/*section*/
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #carrusel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: 50vh;
+  } 
+  #item-precio {
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
+    width: 100%;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+  }
+  .anadir-carrito-bt {
+    height: 80px;
+    border-radius: 40px;
+    border-width: 5px;
+    font-size: 25px; 
+  }
+  .boton {
+    height: 90px; 
+    width: 60px; 
+    border-radius: 15px;
+  }
+  #text-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px; 
+  }
+  #formatos {
+    width: 100%; 
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #botones-opciones {
+    display: flex;
+    justify-content: space-around; 
+  }
+  .opcion {
+    text-align: center;
+    width: 45%;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ }
+ /* estilos para más 769px - 1024px*/
+ @media (min-width: 769px) and (max-width: 1024px) {
+    .anadir-carrito-bt {
+        width: 100%;
+        height: 80px;
+        margin-top: 20px;
+        border-radius: 40px;
+        border-width: 5px;
+        font-size: 25px; 
+      }
+      #text-imagen {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px; 
+      }
+      .boton {
+        height: 90px; 
+        width: 60px; 
+        border-radius: 15px;
+      }
+ }
